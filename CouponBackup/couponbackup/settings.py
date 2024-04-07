@@ -84,7 +84,7 @@ DATABASES = {
         'NAME':os.environ.get("DB_NAME",'coupon_backup'),
         'USER':os.environ.get("DB_USER",'postgres'),
         'PASSWORD':os.environ.get("DB_PASSWORD",'9207400638'),
-        'HOST':'localhost',
+        'HOST':'postgres-couponbackup-db',
         'PORT':'5432',
     }
 }

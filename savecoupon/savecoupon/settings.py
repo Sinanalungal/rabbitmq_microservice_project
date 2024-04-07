@@ -84,7 +84,7 @@ DATABASES = {
         'NAME':os.environ.get("DB_NAME",'rabitmq_saved'),
         'USER':os.environ.get("DB_USER",'postgres'),
         'PASSWORD':os.environ.get("DB_PASSWORD",'9207400638'),
-        'HOST':'localhost',
+        'HOST':'postgres-savecoupon-db',
         'PORT':'5432',
     }
 }
