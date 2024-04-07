@@ -15,7 +15,7 @@ from django.http import HttpResponse
 
 class ProductViewSet(viewsets.ViewSet):
     def list(self,request):
-        products = Product.objects.all()
+        products = Product.objects.order_by('couponcode').all()
         serializer = ProductSerializer(products,many=True)
         return Response(serializer.data)
     
